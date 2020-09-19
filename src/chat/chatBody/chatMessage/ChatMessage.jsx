@@ -5,12 +5,12 @@ import './ChatMessage.scss'
 import Avatar from '@material-ui/core/Avatar'
 import Moment from 'react-moment'
 
-const ChatMessage = () => {
+const ChatMessage = (props) => {
 	return (
-		<div className="Chat-Message">
+		<div className={`Chat-Message ${props.myMessage ? 'my-message' : ''}`}>
 			<Avatar className="Chat-Message-avatar" />
 
-			<div className="Chat-Message-right">
+			<div className="Chat-Message-info">
 				<div className="Chat-Message-sender">Haramie</div>
 				<div className="Chat-Message-body">
 					<div className="Chat-Message-body-message">This is a message</div>

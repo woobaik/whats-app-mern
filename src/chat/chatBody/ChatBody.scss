@@ -1,5 +1,6 @@
 .ChatBody {
-	// 100vh - ChatHeader - ChatHeaderPadding
-	height: calc(100vh - 56px - 48px);
+	// 100vh - ChatHeader - ChatHeaderPadding - chatFooter
+	height: calc(100vh - 56px - 48px - 100px);
 	width: 100%;
+	overflow-y: scroll;
 }

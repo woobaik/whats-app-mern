@@ -1,18 +1,4 @@
 .Sidebar-Search {
 	// container
-	div {
-		// first item
-		.MuiGrid-item:first-child {
-			width: 20%;
-			padding-left: 2rem;
-		}
-
-		.MuiGrid-item:nth-child(2) {
-			color: blue;
-			width: 80%;
-			div {
-				width: 90%;
-			}
-		}
-	}
+	margin: 1rem;
 }

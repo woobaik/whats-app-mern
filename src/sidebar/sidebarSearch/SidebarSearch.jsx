@@ -1,20 +1,31 @@
 import React from 'react'
 import './SidebarSearch.scss'
-import Grid from '@material-ui/core/Grid'
+
 import SearchIcon from '@material-ui/icons/Search'
-import TextField from '@material-ui/core/TextField'
+
+import FormControl from '@material-ui/core/FormControl'
+import InputLabel from '@material-ui/core/InputLabel'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import OutlinedInput from '@material-ui/core/OutlinedInput'
+import IconButton from '@material-ui/core/IconButton'
 
 const SidebarSearch = () => {
 	return (
 		<div className="Sidebar-Search">
-			<Grid container spacing={1} alignItems="flex-end">
-				<Grid item>
-					<SearchIcon />
-				</Grid>
-				<Grid item>
-					<TextField id="input-with-icon-grid" label="Search" />
-				</Grid>
-			</Grid>
+			<FormControl variant="outlined" fullWidth>
+				<InputLabel htmlFor="outlined-adornment-search">search</InputLabel>
+				<OutlinedInput
+					id="outlined-adornment-search"
+					endAdornment={
+						<InputAdornment position="end">
+							<IconButton aria-label="search-icon" edge="end">
+								<SearchIcon />
+							</IconButton>
+						</InputAdornment>
+					}
+					labelWidth={70}
+				/>
+			</FormControl>
 		</div>
 	)
 }

@@ -1,11 +1,12 @@
 .Chat-Message {
 	display: flex;
+	padding: 1rem 1rem 0 1rem;
 
 	.Chat-Message-avatar {
 		margin: 1rem;
 	}
 
-	.Chat-Message-right {
+	.Chat-Message-info {
 		.Chat-Message-sender {
 			font-weight: bold;
 		}
@@ -27,6 +28,17 @@
 				color: gray;
 				font-size: 0.9rem;
 			}
+		}
+	}
+}
+
+//when its my message, move it to right
+.my-message {
+	flex-direction: row-reverse;
+
+	.Chat-Message-info {
+		.Chat-Message-body {
+			background-color: rgb(148, 241, 148);
 		}
 	}
 }
