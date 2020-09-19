@@ -1,0 +1,19 @@
+.Side-Bar-Header {
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: #f6f6f6;
+
+	.large-avatar {
+		width: 56px !important;
+		height: 56px !important;
+	}
+
+	.side-bar-header-right {
+		svg {
+			color: rgb(83, 83, 83);
+		}
+	}
+}

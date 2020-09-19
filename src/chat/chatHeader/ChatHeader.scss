@@ -1,0 +1,27 @@
+.Chat-Header {
+	height: 56px;
+	background-color: palegoldenrod;
+	padding: 24px;
+	display: flex;
+
+	.Chat-Header-left {
+		display: flex;
+		flex: 1;
+		.Chat-Header-left-avatar {
+			margin-right: 1rem;
+			background-color: palevioletred;
+		}
+
+		.Chat-Header-left-info {
+			h3 {
+				margin: 0;
+				margin-bottom: 0.3rem;
+			}
+
+			h6 {
+				margin: 0;
+				color: gray;
+			}
+		}
+	}
+}
