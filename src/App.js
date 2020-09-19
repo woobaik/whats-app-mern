@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './App.css'
+import './App.scss'
 
 import SideBar from './sidebar/SideBar'
 import Chat from './chat/Chat'

@@ -1,0 +1,32 @@
+.Chat-Message {
+	display: flex;
+
+	.Chat-Message-avatar {
+		margin: 1rem;
+	}
+
+	.Chat-Message-right {
+		.Chat-Message-sender {
+			font-weight: bold;
+		}
+
+		.Chat-Message-body {
+			display: flex;
+			background-color: #fbf3c5;
+			padding: 0.5rem;
+			margin-top: 0.2rem;
+			border-radius: 10px;
+			align-items: flex-end;
+
+			.Chat-Message-body-message {
+				margin-right: 0.5rem;
+				font-size: 1.1rem;
+			}
+
+			.Chat-Message-body-timestamp {
+				color: gray;
+				font-size: 0.9rem;
+			}
+		}
+	}
+}

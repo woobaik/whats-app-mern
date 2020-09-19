@@ -1,0 +1,5 @@
+.ChatBody {
+	// 100vh - ChatHeader - ChatHeaderPadding
+	height: calc(100vh - 56px - 48px);
+	width: 100%;
+}
